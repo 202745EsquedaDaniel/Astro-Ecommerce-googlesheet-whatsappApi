@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import Header from "../components/Header";
+const {frontmatter} = Astro.props
 ---
 
 <!DOCTYPE html>
@@ -8,10 +9,12 @@ import Header from "../components/Header";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>{frontmatter.title}</title>
 </head>
 <body>
-    <Header title="Ladrillos.club"></Header>
-    <slot />
+    <Header title={frontmatter.title}></Header>
+    <main class="container mx-auto p-4">
+        <slot />
+    </main>
 </body>
 </html>
