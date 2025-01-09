@@ -1,5 +1,8 @@
 Notas:
+npm i -D @tailwindcss/typography
 
+y despues agregar hasta el ulitimo de la clase de tailwind en el container para que acomode todo
+"prose"
 
 # Astro Starter Kit: Basics
 
